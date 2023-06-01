@@ -98,20 +98,20 @@ curl --header "Content-Type: application/json" --request POST --data '{"customer
 
 <img src="images/carservicearchi.png">
 
-https://github.com/charroux/servicemesh/tree/main/carservice/src/main/java/com/charroux/carservice
+https://github.com/charroux/cloud-native-app/tree/main/carservice/src/main/java/com/charroux/carservice
 
 ## Full duplex asynchronous exchange via gRPC   
 
 <img src="images/full_duplex.png">
 
 ### Service contract
-https://github.com/charroux/servicemesh/blob/main/carservice/src/main/proto/carservice.proto
+https://github.com/charroux/cloud-native-app/blob/main/carservice/src/main/proto/carservice.proto
 
 ### gRPC client
-https://github.com/charroux/servicemesh/blob/main/carservice/src/main/java/com/charroux/carservice/service/RentalServiceImpl.java
+https://github.com/charroux/cloud-native-app/blob/main/carservice/src/main/java/com/charroux/carservice/service/RentalServiceImpl.java
 
 ### gRPC server
-https://github.com/charroux/servicemesh/blob/main/carstat/src/main/java/com/charroux/carstat/CarRentalServiceImpl.java
+https://github.com/charroux/cloud-native-app/blob/main/carstat/src/main/java/com/charroux/carstat/CarRentalServiceImpl.java
 
 ## Data consistency / distributed transaction
 ### The saga pattern
@@ -119,7 +119,7 @@ https://github.com/charroux/servicemesh/blob/main/carstat/src/main/java/com/char
 
 <img src="images/saga.png">
 
-https://github.com/charroux/servicemesh/blob/main/carservice/src/main/java/com/charroux/carservice/service/RentalServiceImpl.java
+https://github.com/charroux/cloud-native-app/blob/main/carservice/src/main/java/com/charroux/carservice/service/RentalServiceImpl.java
 
 ## Kubernetes
 
@@ -134,7 +134,7 @@ kubectl get pods
 kubectl get services
 ```
 
-https://github.com/charroux/servicemesh/blob/main/infrastructure.yaml
+https://github.com/charroux/cloud-native-app/blob/main/infrastructure.yaml
 
 Enter inside the Docker containers:
 ```
