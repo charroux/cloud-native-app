@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: postgres
-          image: charroux/postgres:1
+          image: charroux/postgres:2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5432

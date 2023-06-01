@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: carservice
-        image: charroux/carservice:1
+        image: charroux/carservice:2
         imagePullPolicy: Always
         env:
           - name: CUSTOMER_SERVICE_HOST
@@ -106,7 +106,7 @@ spec:
     spec:
       containers:
         - name: carstat
-          image: charroux/carstat:1
+          image: charroux/carstat:2
           imagePullPolicy: Always
 ---
 apiVersion: v1
@@ -172,7 +172,7 @@ spec:
     spec:
       containers:
         - name: cust
-          image: charroux/customer:1
+          image: charroux/customer:2
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

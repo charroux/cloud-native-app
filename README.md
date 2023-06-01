@@ -190,12 +190,12 @@ kubectl delete pods [pod name]
 ```
 kubectl apply -f infrastructure.yaml
 ```
-https://github.com/charroux/servicemesh/blob/main/infrastructure.yaml
+https://github.com/charroux/cloud-native-app/blob/main/infrastructure.yaml
 
 ```
 kubectl apply -f microservices.yaml
 ```
-https://github.com/charroux/servicemesh/blob/main/microservices.yaml
+https://github.com/charroux/cloud-native-app/blob/main/microservices.yaml
 #### Get the access to the Ingress gateway
 ```
 ./ingress-forward.sh
@@ -252,14 +252,14 @@ http://localhost:3000/
 
 <img src="images/composition.png">
 
-https://github.com/charroux/servicemesh/blob/main/rentalservice/src/main/resources/graphql/rentalAgreement.graphqls
+https://github.com/charroux/cloud-native-app/blob/main/rentalservice/src/main/resources/graphql/rentalAgreement.graphqls
 
-https://github.com/charroux/servicemesh/blob/main/rentalservice/src/main/resources/graphql/customer.graphqls
+https://github.com/charroux/cloud-native-app/blob/main/rentalservice/src/main/resources/graphql/customer.graphqls
 
-https://github.com/charroux/servicemesh/blob/main/rentalservice/src/main/resources/graphql/car.graphqls
+https://github.com/charroux/cloud-native-app/blob/main/rentalservice/src/main/resources/graphql/car.graphqls
 
 Server side coding:
-https://github.com/charroux/servicemesh/blob/main/rentalservice/src/main/java/com/charroux/rentalservice/agreements/RentalController.java
+https://github.com/charroux/cloud-native-app/blob/main/rentalservice/src/main/java/com/charroux/rentalservice/agreements/RentalController.java
 
 ## Delete resources and stop the cluster
 ```
@@ -321,45 +321,45 @@ So you can skip the next steps.
 
 Build the postgres image:
 ```
-docker build --tag=charroux/postgres:1 postgres
-docker push charroux/postgres:1
+docker build --tag=charroux/postgres:2 postgres
+docker push charroux/postgres:2
 ```
 Build the carservice app:
 ```
 cd carservice
 ./gradlew build
 cd ..
-docker build --tag=charroux/carservice:1 carservice
-docker push charroux/carservice:1  
+docker build --tag=charroux/carservice:2 carservice
+docker push charroux/carservice:2  
 ```
 Build the carstat app:
 ```
 cd carstat
 ./gradlew build
 cd ..
-docker build --tag=charroux/carstat:1 carstat  
-docker push charroux/carstat:1  
+docker build --tag=charroux/carstat:2 carstat  
+docker push charroux/carstat:2  
 ```
 Build the customer app:
 ```
 cd customer
 ./gradlew build
 cd ..
-docker build --tag=charroux/customer:1 customer  
-docker push charroux/customer:1  
+docker build --tag=charroux/customer:2 customer  
+docker push charroux/customer:2  
 ```
 Build the graphQL app:
 ```
 cd rentalservice
 ./gradlew build
 cd ..
-docker build --tag=charroux/rentalservice:1 rentalservice  
-docker push charroux/rentalservice:1  
+docker build --tag=charroux/rentalservice:2 rentalservice  
+docker push charroux/rentalservice:2  
 ```
 Build the React app:
 ```
-docker build --tag=charroux/carental:1 carental
-docker push charroux/carental:1 
+docker build --tag=charroux/carental:2 carental
+docker push charroux/carental:2 
 ```
 
 

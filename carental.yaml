@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: carental
-        image: charroux/carental:1
+        image: charroux/carental:2
         imagePullPolicy: Always
         env:
           - name: GRAPHQL_SERVICE_HOST
@@ -73,7 +73,7 @@ spec:
     spec:
       containers:
         - name: rentalservice
-          image: charroux/rentalservice:1
+          image: charroux/rentalservice:2
           imagePullPolicy: Always
 ---
 
