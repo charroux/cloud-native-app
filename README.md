@@ -248,7 +248,7 @@ http://localhost:3000/
 
 
 
-## Composition of services via GraphQL
+## Composition of services using GraphQL
 
 <img src="images/composition.png">
 
